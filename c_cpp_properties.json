@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "name": "ROS",
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "${workspaceFolder}/src/**",
+        "${workspaceFolder}/install/**",
+        "/opt/ros/melodic/include/**",
+        "/usr/local/include/**",
+        "/usr/include/**"
+      ],
+      "defines": [],
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "c11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
