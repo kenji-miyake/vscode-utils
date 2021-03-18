@@ -13,11 +13,11 @@ def repos2workspace(repos_file: Path, output_file: Path):
         repos = yaml.load(f, Loader=yaml.SafeLoader)
 
     paths = [f"src/{path}" for path in repos["repositories"]]
-    folders = [{"path": "."}]
+    folders = [{"path": path} for path in paths]
+    folders += [{"path": "."}]
 
     workspace = {
         "folders": folders,
-        "settings": {"git.ignoredRepositories": ["."], "git.scanRepositories": paths},
     }
 
     with open(output_file, "w") as f:
