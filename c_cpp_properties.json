@@ -9,7 +9,7 @@
       "includePath": [
         "${workspaceFolder}/src/**",
         "${workspaceFolder}/install/**",
-        "/opt/ros/melodic/include/**",
+        "/opt/ros/foxy/include/**",
         "/usr/local/include/**",
         "/usr/include/**"
       ],
