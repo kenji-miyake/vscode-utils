@@ -10,7 +10,7 @@ This generates a VSCode workspace file(`.code-workspace`) from colcon workspace 
 
 ### Prerequisites
 
-- Python 3.6+
+- Python 3.8+
 - pyyaml
 
 #### Ubuntu
@@ -25,10 +25,10 @@ pip3 install pyyaml
 ```sh
 # Create .code-workspace
 wget -P /tmp https://raw.githubusercontent.com/kenji-miyake/vscode-utils/main/repos2workspace.py
-python3 /tmp/repos2workspace.py YOUR_COLCON_WORKSPACE/YOUR_REPOS_FILE.repos
+python3 /tmp/repos2workspace.py {path-to-your-repos-file}
 
 # Open .code-workspace with VSCode
-code YOUR_COLCON_WORKSPACE.code-workspace
+code {path-to-your-repos-file}
 ```
 
 ## [c_cpp_properties.json](https://raw.githubusercontent.com/kenji-miyake/vscode-utils/main/c_cpp_properties.json)
@@ -40,7 +40,7 @@ This is a recommended config of [C/C++](https://marketplace.visualstudio.com/ite
 ### Usage
 
 ```sh
-cd YOUR_COLCON_WORKSPACE/.vscode
+cd {path-to-your-colcon-workspace}/.vscode
 mv c_cpp_properties.json c_cpp_properties.json.old
 wget https://raw.githubusercontent.com/kenji-miyake/vscode-utils/main/c_cpp_properties.json -O c_cpp_properties.json
 ```
