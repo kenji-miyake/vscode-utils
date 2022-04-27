@@ -2,6 +2,35 @@
 
 Utils for vscode
 
+## [repos2gitmodules.py](https://raw.githubusercontent.com/kenji-miyake/vscode-utils/main/repos2gitmodules.py)
+
+### Overview
+
+This generates a dummy `.gitmodules` from colcon workspace file(`.repos`).
+
+### Prerequisites
+
+- Python 3.8+
+- pyyaml
+
+#### Ubuntu
+
+```sh
+sudo apt install python3
+pip3 install pyyaml
+```
+
+### Usage
+
+```sh
+# Create .code-workspace
+wget -P /tmp https://raw.githubusercontent.com/kenji-miyake/vscode-utils/main/repos2gitmodules.py
+python3 /tmp/repos2gitmodules.py {path-to-your-repos-file}
+
+# Open .code-workspace with VSCode
+code {path-to-your-colcon-workspace}
+```
+
 ## [repos2workspace.py](https://raw.githubusercontent.com/kenji-miyake/vscode-utils/main/repos2workspace.py)
 
 ### Overview
