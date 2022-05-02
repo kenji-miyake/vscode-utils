@@ -13,6 +13,7 @@
         "/usr/local/include/**",
         "/usr/include/**"
       ],
+      "compileCommands": "${workspaceFolder}/build/compile_commands.json",
       "defines": [],
       "intelliSenseMode": "gcc-x64",
       "compilerPath": "/usr/bin/gcc",
