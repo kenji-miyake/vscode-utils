@@ -57,7 +57,7 @@ wget -P /tmp https://raw.githubusercontent.com/kenji-miyake/vscode-utils/main/re
 python3 /tmp/repos2workspace.py {path-to-your-repos-file}
 
 # Open .code-workspace with VSCode
-code {path-to-your-repos-file}
+code {path-to-the-generated-code-workspace-file}
 ```
 
 ## [c_cpp_properties.json](https://raw.githubusercontent.com/kenji-miyake/vscode-utils/main/c_cpp_properties.json)
